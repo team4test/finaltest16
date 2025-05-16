@@ -9,7 +9,7 @@ from urllib.parse import parse_qsl
 import datetime
 import os
 line_bot_api = LineBotApi(os.getenv("TOKEN"))
-handler = WebhookHandler(os.getenv("TOKEN"))
+handler = WebhookHandler(os.getenv("SECRET"))
 
 @app.route("/callback", methods=['POST'])
 def callback():
